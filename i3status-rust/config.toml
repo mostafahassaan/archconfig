@@ -1,0 +1,35 @@
+theme = "native"
+icons = "material"
+
+[[block]]
+block = "focused_window"
+max_width = 50
+show_marks = "visible"
+
+[[block]]
+block = "temperature"
+collapsed = false
+interval = 5
+format = "M{max}°, A{average}°"
+#chip = "*-isa-*"
+#inputs = ["CPUTIN", "SYSTIN"]
+
+[[block]]
+block = "memory"
+display_type = "memory"
+format_mem = "{Mup}%"
+format_swap = "{SUp}%"
+
+
+[[block]]
+block = "cpu"
+interval = 1
+format = "{barchart} {utilization}"
+
+[[block]]
+block = "time"
+interval = 60
+format = "%a %d/%m %R"
+
+[[block]]
+block = "backlight"
